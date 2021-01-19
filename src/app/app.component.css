@@ -1,0 +1,241 @@
+.container {
+  display: flex;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 19.5%;
+  height: 600px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.left-container {
+  width: 20%;
+  background-color: white;
+  height: fit-content;
+  padding-bottom: 5%;
+}
+.launch-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 24%;
+  background-color: white;
+  height: fit-content;
+}
+.launch-card-padding {
+  padding: 10px;
+}
+.image {
+  height: 150px;
+  width: 150px;
+}
+.right-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+}
+.left-flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.left-child-container {
+  width: 80%;
+  position: relative;
+  left: 10%;
+}
+.img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: lightgray;
+}
+.background-green {
+  background-color: lightgreen;
+  border-radius: 4px;
+  padding: 10px;
+  padding: 10px 25px;
+  margin: 5px;
+}
+.background-green:hover {
+  background-color: red;
+}
+.background-green:focus {
+  background-color: green !important;
+}
+
+.footer {
+  padding: 30px;
+  text-align: center;
+}
+.horizontal-line {
+  width: 70%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.filter-text {
+  padding-left: 15px;
+  padding-top: 15px;
+}
+.launch-land-button {
+  text-align: center;
+}
+
+/***** MOBILE VIEW *****/
+@media only screen and (max-width: 700px) {
+  .container {
+    display: block;
+  }
+
+  .left-container {
+    width: 100% !important;
+    margin: 0;
+  }
+
+  .right-container {
+    display: block;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .right-container > div {
+    margin-top: 10px;
+  }
+
+  .launch-card {
+    width: 100%;
+  }
+  .left-child-container {
+    width: 66%;
+    position: relative;
+    left: 17%;
+  }
+  .launch-year {
+    width: 50%;
+  }
+  .year-btn {
+    text-align: center;
+  }
+}
+
+/***** TABLET VIEW *****/
+@media only screen and (min-width: 700px) and (max-width: 1024px) {
+  .left-container {
+    width: 33.33% !important;
+    margin: 0;
+  }
+
+  .right-container {
+    display: flex !important;
+    flex-wrap: wrap;
+    width: 66% !important;
+  }
+  .right-container > div {
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+
+  .launch-card {
+    width: 49%;
+    margin-left: 1%;
+  }
+  .left-child-container {
+    width: 98% !important;
+    position: relative;
+    left: 2%;
+  }
+  .launch-year {
+    width: 50%;
+  }
+  .year-btn {
+    text-align: center;
+  }
+  .filter-text {
+    padding-left: 15px;
+    padding-top: 0px !important;
+  }
+}
+
+/***** DESKTOP VIEW *****/
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+  .left-container {
+    width: 20% !important;
+    margin: 0;
+  }
+
+  .right-container {
+    display: flex !important;
+    flex-wrap: wrap;
+    width: 80% !important;
+  }
+  .right-container > div {
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+
+  .launch-card {
+    width: 24%;
+    margin-left: 1%;
+  }
+  .left-child-container {
+    width: 98% !important;
+    position: relative;
+    left: 2%;
+  }
+  .launch-year {
+    width: 50%;
+  }
+  .year-btn {
+    text-align: center;
+  }
+  .filter-text {
+    padding-left: 15px;
+    padding-top: 0px !important;
+  }
+}
+
+/***** BEYOND 1440PX VIEWPORT *****/
+@media only screen and (min-width: 1440px) {
+  .container {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1440px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .left-container {
+    width: 20% !important;
+    margin: 0;
+  }
+
+  .right-container {
+    display: flex !important;
+    flex-wrap: wrap;
+    width: 80% !important;
+  }
+  .right-container > div {
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+
+  .launch-card {
+    width: 24%;
+    margin-left: 1%;
+  }
+  .left-child-container {
+    width: 98% !important;
+    position: relative;
+    left: 2%;
+  }
+  .launch-year {
+    width: 50%;
+  }
+  .year-btn {
+    text-align: center;
+  }
+  .filter-text {
+    padding-left: 15px;
+    padding-top: 0px !important;
+  }
+}
